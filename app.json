@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "Rotom Dex",
+    "slug": "real-life-pokedex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#000000",
+    "scheme": "rotom-dex",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.reallifepokedex.rotom",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        },
+        "NSLocalNetworkUsageDescription": "Save captured photos to photos-store on your computer."
+      }
+    },
+    "android": {
+      "package": "com.reallifepokedex.rotom",
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#000000"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Rotom Dex to show the world through its viewfinder.",
+          "recordAudioAndroid": false,
+          "barcodeScannerEnabled": false
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": false,
+          "supportsPictureInPicture": false
+        }
+      ],
+      "expo-image",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Rotom Dex to choose a photo for your profile.",
+          "cameraPermission": "Allow Rotom Dex to show the world through its viewfinder.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-asset",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-font",
+      "expo-router"
+    ]
+  }
+}
