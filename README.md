@@ -1,2 +1,2 @@
 # real-world-rotom-dex
-Built on React Native, Expo and lots of Redbull
+will update readme later, its ninni time
